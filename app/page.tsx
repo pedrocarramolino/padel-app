@@ -3,8 +3,8 @@
 import { useEffect, useState } from "react"
 import { supabase } from "@/lib/supabase"
 import { useRouter } from "next/navigation"
-import { styles } from "./styles/home.styles"
-import BottomNav from "./components/BottomNav"
+import { styles } from "@/app/styles/home.styles"
+import BottomNav from "@/app/components/BottomNav"
 
 export default function HomePage() {
   const router = useRouter()

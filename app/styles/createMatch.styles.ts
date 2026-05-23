@@ -1,4 +1,10 @@
-export const styles = {
+import { CSSProperties } from "react"
+
+type Styles = {
+  [key: string]: CSSProperties | any
+}
+
+export const styles: Styles = {
   container: {
     minHeight: "100vh",
     background: "#f4f6f8",

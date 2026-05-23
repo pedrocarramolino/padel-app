@@ -1,7 +1,7 @@
 import { CSSProperties } from "react"
 
 type Styles = {
-  [key: string]: CSSProperties
+  [key: string]: CSSProperties | any
 }
 
 export const styles: Styles = {

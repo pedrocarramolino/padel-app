@@ -2,8 +2,8 @@
 
 import { useEffect, useState } from "react"
 import { supabase } from "@/lib/supabase"
-import BottomNav from "../components/BottomNav"
-import { styles } from "../styles/users.styles"
+import BottomNav from "@/app/components/BottomNav"
+import { styles } from "@/app/styles/users.styles"
 
 export default function UsersPage() {
   const [users, setUsers] = useState<any[]>([])

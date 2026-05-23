@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react"
 import { supabase } from "@/lib/supabase"
 import { useRouter, useParams } from "next/navigation"
-import { styles } from "../../styles/matchDetail.styles"
+import { styles } from "@/app/styles/matchDetail.styles"
 
 export default function MatchDetailPage() {
   const router = useRouter()
