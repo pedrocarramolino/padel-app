@@ -1,4 +1,10 @@
-export const styles = {
+import { CSSProperties } from "react"
+
+type Styles = {
+  [key: string]: CSSProperties
+}
+
+export const styles: Styles = {
   container: {
     minHeight: "100vh",
     background: "#f4f6f8",
@@ -16,13 +22,14 @@ export const styles = {
 
   title: {
     margin: 0,
-    fontSize: 22,
-    fontWeight: 800
+    fontSize: 28,
+    fontWeight: 800,
+    color: "#111"
   },
 
   subtitle: {
-    margin: 0,
-    fontSize: 13,
+    marginTop: 4,
+    fontSize: 14,
     color: "#666"
   },
 
@@ -31,64 +38,55 @@ export const styles = {
     maxWidth: 600,
     display: "flex",
     flexDirection: "column",
-    gap: 12
+    gap: 14
   },
 
   card: {
     background: "white",
-    padding: 14,
-    borderRadius: 16,
-    boxShadow: "0 6px 18px rgba(0,0,0,0.06)",
+    borderRadius: 20,
+    padding: 16,
     cursor: "pointer",
-    transition: "transform 0.15s ease"
+    boxShadow: "0 8px 24px rgba(0,0,0,0.06)",
+    transition: "all 0.2s ease"
   },
 
   location: {
-    fontSize: 16,
-    fontWeight: 800,
-    marginBottom: 6
+    fontSize: 18,
+    fontWeight: 700,
+    marginBottom: 8,
+    color: "#111"
   },
 
   date: {
-    fontSize: 13,
+    fontSize: 14,
     color: "#666",
-    marginBottom: 10
+    marginBottom: 12
   },
 
   row: {
     display: "flex",
     justifyContent: "space-between",
-    fontSize: 13,
-    color: "#444"
+    alignItems: "center",
+    marginBottom: 8,
+    fontSize: 14,
+    color: "#333"
   },
 
   cost: {
-    marginTop: 8,
-    fontWeight: 700,
-    fontSize: 13
+    fontSize: 14,
+    fontWeight: 600,
+    marginBottom: 12,
+    color: "#111"
   },
 
   badge: {
-    marginTop: 10,
-    fontSize: 12,
-    padding: "4px 8px",
-    borderRadius: 8,
-    background: "#fff3cd",
-    display: "inline-block"
-  },
-
-  fab: {
-    position: "fixed",
-    bottom: 20,
-    right: 20,
-    width: 56,
-    height: 56,
+    alignSelf: "flex-start",
+    padding: "6px 12px",
     borderRadius: 999,
-    background: "#2ecc71",
-    color: "white",
-    fontSize: 28,
-    border: "none",
-    boxShadow: "0 8px 20px rgba(0,0,0,0.2)",
-    cursor: "pointer"
+    fontSize: 12,
+    fontWeight: 700,
+    display: "inline-flex",
+    alignItems: "center",
+    justifyContent: "center"
   }
 }
