@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "PADDEL APP",
+  title: "PADEL APP",
   description: "APP para gestionar partidos de padel, jugadores y pagos",
 };
 
